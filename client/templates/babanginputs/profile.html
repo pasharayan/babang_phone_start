@@ -1,0 +1,72 @@
+<template name="profile">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title font-title color-on-primary"><img src="/logo_test2.png" height="25"></h1>
+  {{/contentFor}}
+
+
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton text=false path="homepage"}}
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="list">
+        <form class="new-student">
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Student Name</span>
+            <input type="text" name="name" class="form-control">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+             <span class="input-label">Image URL</span>
+             <input type="text" name="thumbnailUrl" class="form-control">
+           </label>
+
+
+          <label class="item item-input item-stacked-label">
+           <span class="input-label">Sekolah</span>
+           <input type="text" name="sekolah" class="form-control">
+          </label>
+
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label"> Student Story </span>
+            <textarea name="story" class="form-control" rows="6"> </textarea>
+           </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Teacher Comments </span>
+            <textarea name="teacher" class="form-control" rows="6"> </textarea>
+          </label>
+
+
+          <label class="item item-input item-stacked-label">
+             <span class="input-label">Previous Achievements</span>
+             <textarea name="previousachievements" class="form-control" rows="6"> </textarea>
+           </label>
+
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Student Latitude</span>
+            <input type="text" name="latitude" class="form-control">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+             <span class="input-label">Student Longitude</span>
+             <input type="text" name="longitude" class="form-control">
+           </label>
+
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Charity Goal</span>
+            <input type="text" name="goal" class="form-control">
+          </label>
+
+
+          <button type="submit" class="btn btn-success btn-lg" style="width:100%;">Create a Student</button>
+        </form>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>
