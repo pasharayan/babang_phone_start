@@ -10,6 +10,8 @@ App.accessRule('https://*.googleapis.com/*');
 App.accessRule('https://*.google.com/*');
 App.accessRule('https://*.gstatic.com/*');
 App.accessRule('https://*.stripe.com/*');
+App.accessRule('https://*.imgur.com/*');
+App.accessRule('http://*.imgur.com/*');
 App.accessRule("http://s3-ap-southeast-2.amazonaws.com/staticassetspasha/*");
 App.accessRule("http://testedunasi.meteor.com");
 

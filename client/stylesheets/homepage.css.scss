@@ -5,16 +5,17 @@
 }
 
 .scroll-image {
+  padding: 20px !important;
   color: #8e8e8e;
   position: relative;
   z-index: 2;
   display: block;
   margin: -1px;
-  padding: 100px 20px 0px;
-  border-width: 1px;
-  border-style: solid;
+  // padding: 100px 20px 0px;
+  // border-width: 1px;
+  // border-style: solid;
   font-size: 16px;
-  min-height: 250px;
+  min-height: 160px;
   h3{
     letter-spacing: -1px;
     font-weight: 700;
